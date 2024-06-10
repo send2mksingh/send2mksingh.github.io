@@ -4,12 +4,11 @@ title: Topics Covered!
 ---
 
 **03-06-2024**
-
-Coredge is product based company and working in Clouds and providing related tools and services.
-It is working on openstack.
-Openstack basic understanding and use case - It is simply set of components and services used for developing any softwares.
-Linux Distributors like - Ubuntu, Debian, Fedora, CentOS and Red hat enterprise Linux.
-Discussion about kernel types - Monolithic and Micro. 
+- Coredge is product based company and working in Clouds and providing related tools and services.
+- It is working on openstack.
+- Openstack basic understanding and use case - It is simply set of components and services used for developing any softwares.
+- Linux Distributors like - Ubuntu, Debian, Fedora, CentOS and Red hat enterprise Linux.
+- Discussion about kernel types - Monolithic and Micro. 
 
 **Working on github**
 
