@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Topics Covered!
+title: Intro Coredge And Github
 ---
 
 **About Coredge**
