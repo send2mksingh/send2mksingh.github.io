@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux Terminology
+title: Usage of Tar, gzip, bzip2, xz and Linux Terminology
 ---
 
 The kernel is considered the brain of the Linux operating system. It controls the hardware and makes the hardware interact with the applications. An example of a kernel is the Linux kernel. The most recent Linux kernel, along with past Linux kernels, can be found at the kernel.org web site.
@@ -52,7 +52,8 @@ The Shell is the command line interpreter that interprets the command line input
 - z    ==> support  .gz extention or method
 - j    ==> support  .bz2 extention or method
 - J    ==> Support  .xz extention or method
-*********************************************************
+
+
 
 
 
