@@ -3,8 +3,6 @@ layout: post
 title: Linux Basics Used Commands 
 ---
 
-**05-06-2024**
-
 **Usage of sed command** 
 
 Stream editor - with the help of this command we can perform some tasks eg: lines printing, lines deleting, insert any line after and befor of any other lines, find and replace works.
@@ -48,3 +46,5 @@ bc - open binary calculator
 free - to check Ram and swap memory details
 df - disk free details with file system
 du - size of files and directory
+
+

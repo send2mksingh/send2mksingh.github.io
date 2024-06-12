@@ -20,3 +20,4 @@ Git stash - It's temporary storage where we can store files for some period, if 
 Git reset - this is very userfule command helpful to undo local changes to the state of git repo, simple used to reset staging area.
 Git revert - used to undo work from commit.
 
+

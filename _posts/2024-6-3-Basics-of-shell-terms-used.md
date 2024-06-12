@@ -3,7 +3,6 @@ layout: Learn and Grow
 title: Brief Intro Shell
 ---
 
- **04-06-2024**
  
  **What is Shell**
  Shell accepts your instruction or commands in English (mostly) and if it is a valid
