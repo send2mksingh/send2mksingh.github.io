@@ -4,6 +4,7 @@ title: Shell Scripting
 ---
 
 **Comment in script**
+
 Comments are often used to give message related to particular command.
 Single line comment - add just #
 eg:-  # this is simple script 
