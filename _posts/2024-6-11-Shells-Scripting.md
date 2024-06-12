@@ -1,6 +1,6 @@
 ---
-layout:post
-title:Shell Scripting
+layout: post
+title: Shell Scripting
 ---
 
 **Comment in script**
