@@ -82,23 +82,23 @@ Log:   /var/log/cron
 
 *****************************************************************
 
-# crontab   -l    { list ==> to check all crontab details in my account }
+crontab   -l    { list ==> to check all crontab details in my account }
 
-# crontab    -e   { edit ==> to apply crontab }
+crontab    -e   { edit ==> to apply crontab }
 
-# crontab   -r    { Remove ==> to remove all cron jobs from my account }
+crontab   -r    { Remove ==> to remove all cron jobs from my account }
  
 ******************************************************************
 
-# crontab  -e   -u     username 
+crontab  -e   -u     username 
 
-# crontab  -l   -u     username 
+crontab  -l   -u     username 
 
-# crontab  -r   -u     username  
+crontab  -r   -u     username  
 
 *******************************************************************
 
-#  crontab  -e  
+crontab  -e  
 
 Here it will open  a file.. this file always devide  into two parts
 
@@ -120,21 +120,21 @@ Second type  ==> we can any script file  on any defined yime
 ***********************************************************************
                        Possible Examples
 ***********************************************************************
-30	09	*	*	*	      [ command - name or script - path ]
-30	21	*	*	*	      [ command - name or script - path ]
-30	09	*	*	1             [ command - name or script - path ]
-30	09	*	*	1,3,5	      [ command - name or script - path ]
-30	09	*	*	0,6	      [ command - name or script - path ]
-30	09	*	*	1-5	      [ command - name or script - path ]
-30	09	1,11,21	 *	*	      [ command - name or script - path ]
-30	09	1       1,3,5	*	      [ command - name or script - path ]
-30	09   1,3,5,11-15,21   * 	*     [ command - name or script - path ]
-*/5	*	*	*	*	      [ command - name or script - path ]
-*	*/2	*	*	*	      [ command - name or script - path ]
+- 30	09	*	*	*	      [ command - name or script - path ]
+- 30	21	*	*	*	      [ command - name or script - path ]
+- 30	09	*	*	1             [ command - name or script - path ]
+- 30	09	*	*	1,3,5	      [ command - name or script - path ]
+- 30	09	*	*	0,6	      [ command - name or script - path ]
+- 30	09	*	*	1-5	      [ command - name or script - path ]
+- 30	09	1,11,21	 *	*	      [ command - name or script - path ]
+- 30	09	1       1,3,5	*	      [ command - name or script - path ]
+- 30	09   1,3,5,11-15,21   * 	*     [ command - name or script - path ]
+- */5	*	*	*	*	      [ command - name or script - path ]
+- *	*/2	*	*	*	      [ command - name or script - path ]
 ************************************************************************************
 
 Value    ==> particular value
-*        ==> all or every
-,        ==> AND
--        ==> Range
-/        ==> repeat
+- *        ==> all or every
+- ,        ==> AND
+- -        ==> Range
+- /        ==> repeat
