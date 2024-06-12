@@ -7,7 +7,16 @@ title: Linux Basics Used Commands
 
 Stream editor - with the help of this command we can perform some tasks eg: lines printing, lines deleting, insert any line after and befor of any other lines, find and replace works.
 Syntax - sed  <operations>   <file-name>
+<<<<<<< HEAD
 any command name   |  sed <operations> 
+=======
+<any command name>   |  sed <operations> 
+
+ > - to redirect output into file
+ >> - to append output to into any existing file
+ | - pipe signed is used to combine two or more commands to get desired output where output of 1st command is the input for the second command.
+
+>>>>>>> 415cf69c426b15d5b0407c2e5ae45a3bb711064f
 
 > - to redirect output into file
 >> - to append output to into any existing file
@@ -21,14 +30,26 @@ Syntax - cut <options>  file-name.
 **Usage of awk**
 
 This is also text processing command can be used same as cut command.
+<<<<<<< HEAD
 Syntax - awk <options>  file-name.
 
 **Vim Editor**
+=======
+ Syntax - awk <options>  file-name.
+ 
+
+**Vim Editor**
+
+>>>>>>> 415cf69c426b15d5b0407c2e5ae45a3bb711064f
 It is one of the popular text editor, with the help of vim we can create, edit files.
 It has basically four working modes eg:- normal mode, insert mode, command mode and visual mode.
 Esc key used to go to normal mode, i to insert mode, : to command mode and v to visual mode.
 
+<<<<<<< HEAD
 **REGULAR USED COMMANDS**
+=======
+********************************************
+>>>>>>> 415cf69c426b15d5b0407c2e5ae45a3bb711064f
 
 ls - list directory contents
 pwd - print working directory
