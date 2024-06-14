@@ -10,6 +10,7 @@ title: How Process Works...........
 
 Whenever a command is issued in Unix/Linux, it creates/starts a new process. For example, pwd when issued which is used to list the current directory location the user is in, a process starts.
 Through a 5 digit ID number Unix/Linux keeps an account of the processes, this number is called process ID or PID. 
+
 Each process in the system has a unique PID.
 Used up pid’s can be used in again for a newer process since all the possible combinations are used.
 
@@ -29,7 +30,7 @@ Type2: Background Process: It runs in the background without keyboard input and 
 
 Need to add & along with the command starts it as a background process
 
-$pwd &   
+- $pwd &   
 - This will run in background so that we can we on terminal and it will complete the execution in the background only.
 
 **How to track ongoing processes:**
@@ -52,24 +53,24 @@ For a running program (named process) Pidof finds the process id’s (pids)
 
 $pidof process-name
 
+**Meaning of Fields:**
+- UID: User ID that this process belongs to - the person running it.
 
-**Fields described by ps are described as:** 
-
-- UID: User ID that this process belongs to (the person running it)
 - PID: Process ID
-- PPID: Parent process ID (the ID of the process that started it)
-- C: CPU utilization of process
-- STIME: Process start time
-- TTY: Terminal type associated with the process
-- TIME: CPU time is taken by the process
-- CMD: The command that started this process
+
+- PPID: Parent process ID - the ID of the process that started it
+- C  CPU utilization of process
+- STIME Process start time
+- TTY  Terminal type associated with the process
+- TIME  CPU time is taken by the process
+- CMD  The command that started this process
 
 **Other important options can be used with ps to get more info about process**
 
-- a: Shows information about all users
-- x: Shows information about processes without terminals
-- u: Shows additional information like -f option
-- e: Displays extended information
+- a  Shows information about all users
+- x  Shows information about processes without terminals
+- u  Shows additional information like -f option
+- e  Displays extended information
 
 **To stop a process:**
 
@@ -120,4 +121,4 @@ Where 0 to 99 for real time and 100 to 139 for user-space.
 
 
 
-******KEEP LEARNING..........................******
+***KEEP LEARNING***
