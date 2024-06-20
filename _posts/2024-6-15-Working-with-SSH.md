@@ -4,10 +4,12 @@ title: How SSH works
 ---
 
 **What is SSH?**
+
 Secure Shell one of the Network protocol used to communicate and share data among the network linux based machines.
 The only prequisite there should be network connectivity between devices means they should ping by IP at least.
 
 **Packages and services required**
+
 Package - openssh-server
 daemon - sshd
 port - 22
@@ -19,6 +21,7 @@ ssh user@server_ip_address
 
 
 Here I am giving one scenario through which we are going to understand the process and how it works--
+
 **Machine-1**
 
 - Do ssh to the server
@@ -30,6 +33,7 @@ Then at first login this will create .ssh/ hidden directory in local machine, th
 
 
 **Password less or Key Based Authentication**
+
 - Generate the key
 - ssh-keygen      - this commmand will generate the key file that will be shared or imported on server machine 
 - Above command is going to create two other files in .ssh/ directory 1. id_rsa, 2. id_rsa.pub
@@ -42,12 +46,14 @@ here -i for import, we are simply sending the public key to the server machine s
 It will verify the login details with key only.
 
 **Machine-2**
+
 When we share ssh key then server side .ssh/ hidden directory is created and it contains one file authozired_hosts.
--Authorized_hosts - contains the details about the server which has made it password less or key based login.
+- Authorized_hosts - contains the details about the server which has made it password less or key based login.
 
 
 
 **@WARNING: Remote host identification changed**
+
 Someone could be eavesdropping on your right now (man in the middle attack)
 
 Because of server side other machine is available of same IP and same name that is not matching from the fingerprint key.
@@ -56,3 +62,4 @@ Because of server side other machine is available of same IP and same name that 
 - We can contact to server side regarding this type of error.
 
 
+**SPEAK LESS LEARN MORE**
