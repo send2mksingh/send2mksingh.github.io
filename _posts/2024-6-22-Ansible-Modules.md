@@ -18,3 +18,11 @@
      $ ansible webservers -m service -a "name=httpd state=started"  
      $ ansible webservers -m ping  
      $ ansible webservers -m command -a "/sbin/reboot -t now" 
+
+---
+   Here is another way to pass arguments to a module that is using YAML syntax, and it is al     so called complex args.
+ ---
+     $ name: restart webserver  
+     $ service:  
+     $ name: httpd  
+     $ state: restarted  
