@@ -11,6 +11,6 @@
 ### Contact me
  - Having any updates and discussion please feel free to contact me....
 
- - [email:- send2mksingh@gmail.com]
+ - send2mksingh@gmail.com
 
-**Keep Learning**
+**Keep Learning.......**
