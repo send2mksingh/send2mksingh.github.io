@@ -1,15 +1,16 @@
 ---
-layout: page
-title: About
-permalink: /about/
+ layout: page
+ title: About
+ permalink: /about/
 ---
 
-Some information about you!
+ - This is Manoj Kumar, working at Coredge.io as Devops Engineer.
+   loving to learn to new things and share with people.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
+ - Having any updates and discussion please feel free to contact me....
 
-[email@domain.com](mailto:email@domain.com)
+ - [email:- send2mksingh@gmail.com]
+
+**Keep Learning**
