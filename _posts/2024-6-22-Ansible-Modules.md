@@ -12,6 +12,9 @@
 ---
 
  - see how to execute three different modules from the command line.
+ 
+ ---
+ 
      $ ansible webservers -m service -a "name=httpd state=started"  
      $ ansible webservers -m ping  
      $ ansible webservers -m command -a "/sbin/reboot -t now" 
