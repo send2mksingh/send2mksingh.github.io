@@ -12,10 +12,10 @@
      2. var   # Create variable and prints the values. 
      3. verbosity  # Shows the execution progress.
 
-   ---
+---
      Debug module with msg parameter with example:
      
-   ---
+---
 
    ---
     - name: ansible debug module with msg parameter
@@ -26,10 +26,12 @@
            msg: "hello world this is Manoj Kumar"
 
 
-    --- 
+  - Now we will run the playbook and see the output:
+
+--- 
      When running the playbook you will get below output:
     
-    ---
+---
       [root@master playbook]# ansible-playbook msg_module.sh 
 
        PLAY [ansible debug module with msg parameter] *******************************************************************************
@@ -49,11 +51,14 @@
        PLAY RECAP *******************************************************************************************************************
        192.168.152.130            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
        192.168.152.135            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
+       
 
-    ---
+  - Working with variables :
+
+---
        Printing variable using var parameters:
      
-    --- 
+--- 
       
     ---
      - name: Ansible debug module in action
