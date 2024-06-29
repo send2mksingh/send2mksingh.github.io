@@ -1,7 +1,7 @@
 ---
   layout: post
   title: Ansible Facts
- ---
+---
 
   Ansible facts are nothing but information about managed nodes like - os distribution, release, version, architecture, processor, python, hostname, domain name and ip address and more details.
 
@@ -24,5 +24,5 @@
    - 1. Default facts
    - 2. Custom facts
 
-   
+
 
