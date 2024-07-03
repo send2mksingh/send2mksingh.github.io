@@ -16,7 +16,7 @@
     - Master runs control plane to run cluster smoothly.
 
     
-   **Components of Control Plane(Master Node)**
+  **Components of Control Plane(Master Node)**
     **Kube-api-server:**
     - (Responsible for all communication) : This api server interacts directly with user ( we           apply yml or json manifest to kube-api-server).
 
