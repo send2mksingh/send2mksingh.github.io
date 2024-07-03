@@ -8,10 +8,10 @@
   **Why we need to encrypt playbook?**
     We know that ansible is being used for automation there is a possibility that playbooks contain certain credentials, ssl certifications or other sensitive data and to save such data in simple 
     plain text is the risky task.
+    - So we can use ansible vault to simply encrypt our data in secure manner.
 
-    So we can use ansible vault to simply encrypt our data in secure manner.
 
----
+ ---
    To encrypt playbook-
 
  ---
