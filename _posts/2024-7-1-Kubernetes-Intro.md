@@ -1,6 +1,6 @@
 ---
  layout: post
- title: Kubernetes Intro & Its Components
+ title: Kubernetes Introduction
 ---
   
    Kubernetes is an open source container management tool which automates container deployment, container scaling and load balancing.
