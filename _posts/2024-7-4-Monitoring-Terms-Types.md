@@ -71,11 +71,12 @@ Example 2: Server Monitoring
 
 A server is set up to automatically report its CPU and memory usage to a monitoring system every five minutes.
 The server (student) sends an update to the monitoring system (teacher), "I'm using 40% CPU and 60% memory."
+
 In both examples, the services (students) are actively sending (pushing) their information to the monitoring system (teacher) without waiting to be asked.
 
 
 
-
+***............................to learn more follow this blog...............................***
 
 
 
