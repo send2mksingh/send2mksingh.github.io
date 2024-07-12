@@ -498,6 +498,98 @@ By following these steps, you can successfully transfer a volume from one owner 
 
 
 
+Yes, in OpenStack, you can view the list of roles and their associated IDs using the OpenStack Identity service (Keystone) CLI commands or API. Here's how you can do it:
+
+### Using OpenStack CLI (Keystone Commands)
+
+1. **List Roles**:
+   To list all roles in your OpenStack environment, you can use the `openstack role list` command:
+   ```
+   openstack role list
+   ```
+   This command will display a list of all roles along with their IDs.
+
+2. **View Role Details**:
+   To view detailed information about a specific role, including its ID, you can use the `openstack role show` command followed by the role name or ID:
+   ```
+   openstack role show <role-name-or-id>
+   ```
+   Replace `<role-name-or-id>` with the actual name or ID of the role you want to inspect.
+
+### Using OpenStack Identity API
+
+1. **List Roles**:
+   You can also retrieve the list of roles using the OpenStack Identity API. Make an HTTP GET request to the `/roles` endpoint of the Keystone API:
+   ```
+   GET /v3/roles
+   ```
+   This API call will return a JSON response containing details about all roles configured in your OpenStack environment.
+
+2. **View Role Details**:
+   To view details of a specific role, you can make a GET request to the `/roles/{role_id}` endpoint, where `{role_id}` is the ID of the role you want to retrieve:
+   ```
+   GET /v3/roles/{role_id}
+   ```
+   Replace `{role_id}` with the ID of the role you are interested in.
+
+### Horizon Dashboard
+
+If you prefer a graphical interface, you can also view roles and their IDs through the Horizon dashboard:
+1. Log in to the Horizon dashboard as an administrative user.
+2. Navigate to **Identity > Roles** in the left-hand menu.
+3. Here, you can see a list of all roles configured in your OpenStack environment, along with their associated IDs and other details.
+
+### Summary
+
+Whether using CLI commands, API requests, or the Horizon dashboard, OpenStack provides multiple ways to view and manage roles within your cloud environment. This capability is essential for managing user access, permissions, and security policies effectively across OpenStack services and resources.
+
+
+
+Yes, in OpenStack, you can view the list of roles and their associated IDs using the OpenStack Identity service (Keystone) CLI commands or API. Here's how you can do it:
+
+### Using OpenStack CLI (Keystone Commands)
+
+1. **List Roles**:
+   To list all roles in your OpenStack environment, you can use the `openstack role list` command:
+   ```
+   openstack role list
+   ```
+   This command will display a list of all roles along with their IDs.
+
+2. **View Role Details**:
+   To view detailed information about a specific role, including its ID, you can use the `openstack role show` command followed by the role name or ID:
+   ```
+   openstack role show <role-name-or-id>
+   ```
+   Replace `<role-name-or-id>` with the actual name or ID of the role you want to inspect.
+
+### Using OpenStack Identity API
+
+1. **List Roles**:
+   You can also retrieve the list of roles using the OpenStack Identity API. Make an HTTP GET request to the `/roles` endpoint of the Keystone API:
+   ```
+   GET /v3/roles
+   ```
+   This API call will return a JSON response containing details about all roles configured in your OpenStack environment.
+
+2. **View Role Details**:
+   To view details of a specific role, you can make a GET request to the `/roles/{role_id}` endpoint, where `{role_id}` is the ID of the role you want to retrieve:
+   ```
+   GET /v3/roles/{role_id}
+   ```
+   Replace `{role_id}` with the ID of the role you are interested in.
+
+### Horizon Dashboard
+
+If you prefer a graphical interface, you can also view roles and their IDs through the Horizon dashboard:
+1. Log in to the Horizon dashboard as an administrative user.
+2. Navigate to **Identity > Roles** in the left-hand menu.
+3. Here, you can see a list of all roles configured in your OpenStack environment, along with their associated IDs and other details.
+
+### Summary
+
+Whether using CLI commands, API requests, or the Horizon dashboard, OpenStack provides multiple ways to view and manage roles within your cloud environment. This capability is essential for managing user access, permissions, and security policies effectively across OpenStack services and resources.
+
 
 These additional examples cover more OpenStack commands across various services. For detailed options and additional commands, refer to the OpenStack documentation or use `openstack --help` for comprehensive command details and usage examples. Each command typically has detailed documentation and examples to help you understand its usage and parameters.
 
