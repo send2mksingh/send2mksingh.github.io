@@ -143,4 +143,179 @@ Listing all Kubernetes commands with examples in a single response would be too 
      kubectl exec -it nginx-abc123 -- /bin/bash
      ```
 
-These examples cover various aspects of Kubernetes management and operations. For detailed options and additional commands, refer to the Kubernetes documentation or use `kubectl --help` for comprehensive command details.
+
+
+
+Sure, here's a comprehensive list of Kubernetes commands with examples covering various aspects of cluster management, workload deployment, service management, configuration, networking, storage, security, and troubleshooting:
+
+### Cluster Management
+
+1. **View Cluster Info**
+   - **Command**: 
+     ```bash
+     kubectl cluster-info
+     ```
+   - **Example**: Displays information about the Kubernetes cluster.
+
+2. **List Nodes**
+   - **Command**: 
+     ```bash
+     kubectl get nodes
+     ```
+   - **Example**: Lists all nodes in the cluster.
+
+3. **View Kubernetes Version**
+   - **Command**: 
+     ```bash
+     kubectl version
+     ```
+   - **Example**: Shows the client and server Kubernetes version information.
+
+### Workload Management
+
+1. **List Pods**
+   - **Command**: 
+     ```bash
+     kubectl get pods
+     ```
+   - **Example**: Lists all pods in the current namespace.
+
+2. **Describe Pod**
+   - **Command**: 
+     ```bash
+     kubectl describe pod <pod-name>
+     ```
+   - **Example**: Provides detailed information about a specific pod.
+
+3. **Create Deployment**
+   - **Command**: 
+     ```bash
+     kubectl create deployment nginx --image=nginx:latest
+     ```
+   - **Example**: Deploys an nginx container using the latest nginx image.
+
+4. **Scale Deployment**
+   - **Command**: 
+     ```bash
+     kubectl scale deployment nginx --replicas=3
+     ```
+   - **Example**: Scales the number of replicas of the nginx deployment to 3.
+
+5. **Delete Deployment**
+   - **Command**: 
+     ```bash
+     kubectl delete deployment nginx
+     ```
+   - **Example**: Deletes the nginx deployment.
+
+### Service Management
+
+1. **List Services**
+   - **Command**: 
+     ```bash
+     kubectl get services
+     ```
+   - **Example**: Lists all services in the current namespace.
+
+2. **Expose Deployment**
+   - **Command**: 
+     ```bash
+     kubectl expose deployment nginx --port=80 --target-port=80 --type=LoadBalancer
+     ```
+   - **Example**: Exposes the nginx deployment as a LoadBalancer service on port 80.
+
+3. **Delete Service**
+   - **Command**: 
+     ```bash
+     kubectl delete service nginx
+     ```
+   - **Example**: Deletes the nginx service.
+
+### Configuration Management
+
+1. **List ConfigMaps**
+   - **Command**: 
+     ```bash
+     kubectl get configmaps
+     ```
+   - **Example**: Lists all ConfigMaps in the current namespace.
+
+2. **Create ConfigMap from File**
+   - **Command**: 
+     ```bash
+     kubectl create configmap my-config --from-file=config.yaml
+     ```
+   - **Example**: Creates a ConfigMap named `my-config` using data from `config.yaml`.
+
+### Networking
+
+1. **List Network Policies**
+   - **Command**: 
+     ```bash
+     kubectl get networkpolicies
+     ```
+   - **Example**: Lists all network policies in the current namespace.
+
+2. **Create Network Policy**
+   - **Command**: 
+     ```bash
+     kubectl apply -f network-policy.yaml
+     ```
+   - **Example**: Applies a network policy defined in `network-policy.yaml`.
+
+### Storage
+
+1. **List PersistentVolumes**
+   - **Command**: 
+     ```bash
+     kubectl get pv
+     ```
+   - **Example**: Lists all persistent volumes in the cluster.
+
+2. **Create PersistentVolumeClaim**
+   - **Command**: 
+     ```bash
+     kubectl apply -f pvc.yaml
+     ```
+   - **Example**: Applies a PersistentVolumeClaim (PVC) defined in `pvc.yaml`.
+
+### Security
+
+1. **List ServiceAccounts**
+   - **Command**: 
+     ```bash
+     kubectl get serviceaccounts
+     ```
+   - **Example**: Lists all service accounts in the current namespace.
+
+2. **Create RoleBinding**
+   - **Command**: 
+     ```bash
+     kubectl create rolebinding my-rolebinding --role=my-role --user=my-user --namespace=my-namespace
+     ```
+   - **Example**: Creates a role binding granting `my-user` access to `my-role` in `my-namespace`.
+
+### Troubleshooting
+
+1. **View Pod Logs**
+   - **Command**: 
+     ```bash
+     kubectl logs <pod-name>
+     ```
+   - **Example**: Displays logs from a specific pod.
+
+2. **Exec into Pod**
+   - **Command**: 
+     ```bash
+     kubectl exec -it <pod-name> -- /bin/bash
+     ```
+   - **Example**: Opens an interactive shell session inside a specific pod.
+
+3. **View Events**
+   - **Command**: 
+     ```bash
+     kubectl get events
+     ```
+   - **Example**: Lists recent events in the cluster.
+
+These examples cover various Kubernetes commands used for managing clusters, deploying workloads, configuring services, networking, storage, security, and troubleshooting. Each command has specific options and flags that can be explored further using `kubectl --help` or by referring to the Kubernetes documentation for more details.
