@@ -1,6 +1,6 @@
 ---
  layout: post
- title: K8 arch simle explanation
+ title: K8 arch simple explanation
 ---
 
 
