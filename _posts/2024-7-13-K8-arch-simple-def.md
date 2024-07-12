@@ -1,7 +1,9 @@
 ---
  layout: post
- title: Kubernetes Architecute in Simple way
---- 
+ title: K8 arch simle explanation
+---
+
+
 
 
 Kubernetes is an open-source platform for automating the deployment, scaling, and management of containerized applications. It has a modular architecture consisting of various components that work together to maintain the desired state of an application. Here’s an overview of the key components and their roles in the Kubernetes architecture:
@@ -63,8 +65,34 @@ Kubernetes is an open-source platform for automating the deployment, scaling, an
 4. **Logging**:
    - Centralized logging solutions like Elasticsearch, Fluentd, and Kibana (EFK stack) aggregate and analyze logs from all components.
 
+### Kubernetes Cluster Architecture
 
-
+```plaintext
+                 +--------------------------+
+                 |        Master Node       |
+                 +--------------------------+
+                 |     kube-apiserver       |
+                 |         etcd             |
+                 | kube-controller-manager  |
+                 |     kube-scheduler       |
+                 +--------------------------+
+                            |
+                            |
+                            v
++------------------------------------------------------+
+|                     Network                          |
++------------------------------------------------------+
+                            |
+                            |
+                            v
+  +-----------------+    +-----------------+    +-----------------+
+  |  Worker Node 1  |    |  Worker Node 2  |    |  Worker Node 3  |
+  +-----------------+    +-----------------+    +-----------------+
+  |     kubelet     |    |     kubelet     |    |     kubelet     |
+  |  Container Runtime  |    |  Container Runtime  |    |  Container Runtime  |
+  |    kube-proxy    |    |    kube-proxy    |    |    kube-proxy    |
+  +-----------------+    +-----------------+    +-----------------+
+```
 
 - **Master Node**: Manages the entire cluster, making decisions about scheduling, scaling, and maintaining the desired state.
 - **Worker Nodes**: Run the application workloads. Each node has the necessary components to manage containers and maintain communication with the master node.
