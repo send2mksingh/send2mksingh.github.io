@@ -63,36 +63,7 @@ Kubernetes is an open-source platform for automating the deployment, scaling, an
 4. **Logging**:
    - Centralized logging solutions like Elasticsearch, Fluentd, and Kibana (EFK stack) aggregate and analyze logs from all components.
 
----
-### Kubernetes Cluster Architecture
 
---- 
-  -
-
-                 +--------------------------+
-                 |        Master Node       |
-                 +--------------------------+
-                 |     kube-apiserver       |
-                 |         etcd             |
-                 | kube-controller-manager  |
-                 |     kube-scheduler       |
-                 +--------------------------+
-                            |
-                            |
-                            v
-+------------------------------------------------------+
-|                     Network                          |
-+------------------------------------------------------+
-                            |
-                            |
-                            v
-  +-----------------+    +-----------------+    +-----------------+
-  |  Worker Node 1  |    |  Worker Node 2  |    |  Worker Node 3  |
-  +-----------------+    +-----------------+    +-----------------+
-  |     kubelet     |    |     kubelet     |    |     kubelet     |
-  |  Container Runtime  |    |  Container Runtime  |    |  Container Runtime  |
-  |    kube-proxy    |    |    kube-proxy    |    |    kube-proxy    |
-  +-----------------+    +-----------------+    +-----------------+
 
 
 - **Master Node**: Manages the entire cluster, making decisions about scheduling, scaling, and maintaining the desired state.
