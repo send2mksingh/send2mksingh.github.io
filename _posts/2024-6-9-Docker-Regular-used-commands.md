@@ -284,4 +284,167 @@ This will display all containers, and you should see your newly created containe
      ```
    - **Example**: Removes the stack named `my-stack` from the swarm.
 
+
+
+The `docker diff` command shows changes made to the filesystem of a Docker container. Here’s a step-by-step example:
+
+1. **Start a Docker container:**
+
+   ```bash
+   docker run -d --name mycontainer ubuntu:latest
+   ```
+
+   This command runs a container named `mycontainer` using the latest Ubuntu image.
+
+2. **Make some changes inside the container:**
+
+   ```bash
+   docker exec mycontainer bash -c "echo 'Hello, Docker!' > /root/hello.txt"
+   ```
+
+   This command creates a file `/root/hello.txt` inside the `mycontainer` container.
+
+3. **Use the `docker diff` command to see the changes:**
+
+   ```bash
+   docker diff mycontainer
+   ```
+
+   The output might look something like this:
+
+   ```
+   A /root
+   A /root/hello.txt
+   ```
+
+   This indicates that a new file (`hello.txt`) has been added to the `/root` directory.
+
+4. **Stop and remove the container (optional):**
+
+   ```bash
+   docker stop mycontainer
+   docker rm mycontainer
+   ```
+
+Here’s a summary of the commands:
+
+```bash
+docker run -d --name mycontainer ubuntu:latest
+docker exec mycontainer bash -c "echo 'Hello, Docker!' > /root/hello.txt"
+docker diff mycontainer
+docker stop mycontainer
+docker rm mycontainer
+```
+
+This example shows how to start a container, make a change to its filesystem, and then use `docker diff` to see the difference.
+
 These commands and examples should cover a wide range of Docker functionalities. For more details on each command and its options, you can use the Docker documentation or the `--help` flag with any Docker command.
+
+
+Creating an image from a running container involves using the `docker commit` command. Here's how you can do it:
+
+1. **Start a Docker container (if not already running):**
+
+   ```bash
+   docker run -d --name mycontainer ubuntu:latest
+   ```
+
+2. **Make some changes inside the container:**
+
+   ```bash
+   docker exec mycontainer bash -c "echo 'Hello, Docker!' > /root/hello.txt"
+   ```
+
+3. **Create an image from the running container:**
+
+   ```bash
+   docker commit mycontainer mynewimage:latest
+   ```
+
+   This command commits the changes made in the container `mycontainer` to a new image named `mynewimage` with the tag `latest`.
+
+4. **Verify the new image:**
+
+   ```bash
+   docker images
+   ```
+
+   You should see `mynewimage` listed among the available images.
+
+Here’s a summary of the commands:
+
+```bash
+docker run -d --name mycontainer ubuntu:latest
+docker exec mycontainer bash -c "echo 'Hello, Docker!' > /root/hello.txt"
+docker commit mycontainer mynewimage:latest
+docker images
+```
+
+This process captures the current state of a container and saves it as a new Docker image.
+
+
+
+The command `docker container inspect volumename` is not correct for inspecting volumes. To inspect a volume, you should use the `docker volume inspect` command. Here’s how to inspect a Docker volume:
+
+1. **List all volumes to get the volume name (if you don't already know it):**
+
+   ```bash
+   docker volume ls
+   ```
+
+2. **Inspect a specific volume:**
+
+   ```bash
+   docker volume inspect volumename
+   ```
+
+Replace `volumename` with the actual name of the volume you want to inspect.
+
+Here's an example:
+
+```bash
+docker volume ls
+docker volume inspect myvolume
+```
+
+The `docker volume inspect myvolume` command will provide detailed information about the volume named `myvolume`, including its mount point and configuration options.
+
+
+To inspect a Docker container, you should use the `docker container inspect` command. Here’s how you can do it:
+
+1. **List all running containers to get the container ID or name:**
+
+   ```bash
+   docker ps
+   ```
+
+2. **Inspect a specific container:**
+
+   ```bash
+   docker container inspect containername_or_id
+   ```
+
+Replace `containername_or_id` with the actual name or ID of the container you want to inspect.
+
+Here’s an example:
+
+1. **List all running containers:**
+
+   ```bash
+   docker ps
+   ```
+
+   This will provide output similar to:
+
+   ```
+   CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS     NAMES
+   abc123def456   ubuntu:latest  "/bin/bash"              10 minutes ago  Up 10 minutes            mycontainer
+   ```
+
+2. **Inspect the container named `mycontainer`:**
+
+   ```bash
+   docker container inspect mycontainer
+   ```
+
+This command will display detailed information about the container, including its configuration, network settings, and other metadata.
