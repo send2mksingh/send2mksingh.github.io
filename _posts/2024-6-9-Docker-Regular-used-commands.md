@@ -3,7 +3,43 @@
  title: Docker regular used commands
 ---
 
-Certainly! Here is a comprehensive list of Docker commands with examples covering various aspects of Docker usage, including container management, image management, networking, volumes, and more.
+To create a Docker container without running it, you can use the `docker create` command. This command sets up the container from an image but does not start it. Here is the syntax and an example of how to use the command:
+
+### Command Syntax
+```bash
+docker create [OPTIONS] IMAGE [COMMAND] [ARG...]
+```
+
+### Example
+
+1. **Pull an Image** (optional if the image is not already available locally):
+   ```bash
+   docker pull nginx
+   ```
+
+2. **Create a Container**:
+   ```bash
+   docker create --name my_nginx_container nginx
+   ```
+
+### Explanation
+
+- `docker create`: The command to create a new container.
+- `--name my_nginx_container`: Optionally provide a name for the container.
+- `nginx`: The name of the image to create the container from.
+
+This command will output a long string which is the container ID.
+
+### Verify the Container Creation
+
+To verify that the container has been created but not started, you can list all containers, including the ones that are not running:
+
+```bash
+docker ps -a
+```
+
+This will display all containers, and you should see your newly created container in the list with the `Created` status, indicating that it has been created but not started.
+
 
 ### Docker Container Management
 
