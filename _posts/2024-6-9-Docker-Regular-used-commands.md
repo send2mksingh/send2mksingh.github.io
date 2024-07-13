@@ -448,3 +448,27 @@ Here’s an example:
    ```
 
 This command will display detailed information about the container, including its configuration, network settings, and other metadata.
+
+
+
+Volume host to container ------------------------------------------------------------------------------------------------
+
+Verify files in /home/ec2-user
+
+docker run -it --name hostcont -v  /home/ec2-user:/manoj-dir --privileged=true ubuntu  /bin/bash
+
+cd /manoj-dir
+
+
+
+--------Now try to create volume using command ------
+docker run -it --name container3 -v /volume2   ubuntu /bin/bash
+
+do ls - cd /volume
+now create one file cont3file and exit
+
+----now create one more container, and share volume2
+
+---> docker run -it --name Container4 --privileged=true --volume-from Container 3 ubuntu  /bin/bash
+
+-- -- now you are inside Container, do ls, you can see volume2
