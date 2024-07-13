@@ -2,12 +2,12 @@
  layout: post
  title: Docker Port Expose
 ---
-
+ 
 
 **How Port Mapping Works**
 
-Imagine you have a web server running inside a Docker container on port 3000. By default, this port is only accessible 
-within the Docker network and not from your host machine or the external network.
+ Imagine you have a web server running inside a Docker container on port 3000. By default, this port is only accessible 
+ within the Docker network and not from your host machine or the external network.
 
 To make this server accessible outside the container, you need to forward a port from the host to the container.
 
@@ -38,26 +38,26 @@ Document Port Mappings: Maintain clear documentation of which host ports map to 
 
 ---
  **Commands to map ip of host and container-**
-
+ 
 ---
 
- - docker run -td --name container-name -p 80:80 ubuntu
+  - docker run -td --name container-name -p 80:80 ubuntu
 
- - docker ps
+  - docker ps
 
- - docker port containername
+  - docker port containername
 
- - docker exec  -it containername /bin/bash
+  - docker exec  -it containername /bin/bash
 
- - apt-get update -y
+  - apt-get update -y
 
- - apt-get install apache2  -y
+  - apt-get install apache2  -y
 
- - cd /var/www/html
+  - cd /var/www/html
 
- - echo "Hello World " > index.html
+  - echo "Hello World " > index.html
 
- - service apache2 restart
+  - service apache2 restart
 
 ---
  **Example-2**
