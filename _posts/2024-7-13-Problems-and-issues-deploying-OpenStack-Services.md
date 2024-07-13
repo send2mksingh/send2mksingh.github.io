@@ -4,7 +4,7 @@
 ---
 
 
-Creating and managing volumes in OpenStack can sometimes present several challenges. Here are some common problems you might encounter and their potential causes:
+- Creating and managing volumes in OpenStack can sometimes present several challenges. Here are some common problems you might encounter and their potential causes:
 
 1. **Volume Creation Failures:**
    - **Insufficient Quota:** The user may have exceeded their quota for volumes or storage.
@@ -63,7 +63,9 @@ By addressing these common issues and following the troubleshooting tips, you ca
 
 
 
-Creating instances in OpenStack can sometimes encounter various issues. Here are some common problems and their potential causes during the instance creation process:
+
+
+- Creating instances in OpenStack can sometimes encounter various issues. Here are some common problems and their potential causes during the instance creation process:
 
 1. **Insufficient Resources:**
    - **Quota Limits:** The user may have exceeded their quota for instances, vCPUs, RAM, or disk space.
@@ -130,7 +132,9 @@ By addressing these common issues and following the troubleshooting tips, you ca
 
 
 
-Creating networks in OpenStack can encounter several real-time issues that can disrupt or prevent the process. Here are common problems and their potential causes:
+
+
+- Creating networks in OpenStack can encounter several real-time issues that can disrupt or prevent the process. Here are common problems and their potential causes:
 
 1. **Configuration Errors:**
    - **Incorrect Network Configuration:** Errors in network settings, such as incorrect subnet configurations, can lead to network creation failures.
@@ -197,7 +201,10 @@ Creating networks in OpenStack can encounter several real-time issues that can d
 By systematically addressing these potential issues and following the troubleshooting tips, you can effectively manage and resolve problems encountered during network creation in OpenStack.
 
 
-Creating storage volumes in OpenStack can present several challenges. Here are some common issues that might arise during the storage creation process, along with their potential causes and troubleshooting tips:
+
+
+
+- Creating storage volumes in OpenStack can present several challenges. Here are some common issues that might arise during the storage creation process, along with their potential causes and troubleshooting tips:
 
 ### Common Issues:
 
@@ -266,7 +273,10 @@ By systematically addressing these potential issues and following the troublesho
 
 
 
-Accessing the Horizon dashboard in OpenStack can sometimes present various challenges. Here are some common issues that might occur along with their potential causes and troubleshooting tips:
+
+
+
+- Accessing the Horizon dashboard in OpenStack can sometimes present various challenges. Here are some common issues that might occur along with their potential causes and troubleshooting tips:
 
 ### Common Issues:
 
