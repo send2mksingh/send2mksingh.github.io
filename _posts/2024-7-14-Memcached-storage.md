@@ -3,7 +3,7 @@
  title: Memcached Storage
 ---
  
-Memcached is an open-source, high-performance, distributed memory object caching system. It is designed to speed up dynamic web applications by alleviating database load. Memcached stores data in memory (RAM), which allows for quick data retrieval, making it an effective solution for caching and improving the performance of web applications.
+Memcached is a type of DB that stores data in key-value pair and it stores data in RAM memory so reading and writing of data is very fast. Memcached stores data in memory (RAM), which allows for quick data retrieval, making it an effective solution for caching and improving the performance of web applications.
 
 ### Key Features of Memcached
 
