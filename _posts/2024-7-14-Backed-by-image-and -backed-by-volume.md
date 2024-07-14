@@ -7,9 +7,9 @@ In OpenStack, when you create an instance (virtual machine), it can be backed by
 
 ### Backed by Image
 
-When an instance is backed by an image:
+When an instance is backed by an image instance root disk created from the image directly and exist as long as the instance exist.
 
-- **Image**: A read-only template that contains an operating system and any additional software you want to pre-install. Images are stored in the OpenStack Image service (Glance).
+- **Image**: A read-only template file that contains os, softwares and supporting libraries. Images are stored in the OpenStack Image service (Glance).
 - **Instance Creation**: The instance's root disk is created directly from this image. During boot, the image is copied to ephemeral storage on the compute node.
 - **Ephemeral Storage**: The root disk is ephemeral, meaning that any changes made to the disk are lost if the instance is terminated. The disk exists only as long as the instance is running.
 - **Use Case**: Ideal for stateless applications where the root disk does not need to persist beyond the life of the instance.
@@ -23,7 +23,7 @@ openstack server create --image <image-id> --flavor <flavor-id> --network <netwo
 
 ### Backed by Volume
 
-When an instance is backed by a volume:
+When an instance is backed by a volume the instance root disk is created from the any volume and that exist even after the instance is terminated.
 
 - **Volume**: A persistent block storage device managed by the OpenStack Block Storage service (Cinder). Volumes can persist beyond the life of the instance and can be detached and reattached to different instances.
 - **Instance Creation**: The root disk of the instance is a volume created from an image or an existing volume. This volume is attached to the instance and acts as its root disk.
