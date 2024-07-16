@@ -472,3 +472,85 @@ now create one file cont3file and exit
 ---> docker run -it --name Container4 --privileged=true --volume-from Container 3 ubuntu  /bin/bash
 
 -- -- now you are inside Container, do ls, you can see volume2
+
+
+To create a Docker container with a specific network, you can use the `--network` option in the `docker run` command. This option allows you to specify the network that the container will connect to.
+
+Here are the steps to create a container with a specific network:
+
+### Step 1: Create a Docker Network (if not already created)
+First, create a Docker network using the `docker network create` command. Docker supports different network drivers, such as `bridge`, `overlay`, and `host`. For this example, we'll create a custom bridge network.
+
+```bash
+docker network create my_custom_network
+```
+
+### Step 2: Run the Docker Container with the Specific Network
+Next, use the `--network` option to run a container connected to the `my_custom_network` network.
+
+```bash
+docker run -it --name my_container --network my_custom_network centos /bin/bash
+```
+
+This command creates a new container named `my_container` using the CentOS image and connects it to the `my_custom_network` network.
+
+### Example Commands
+
+#### Creating a Custom Bridge Network
+```bash
+docker network create my_custom_network
+```
+
+#### Running a New Container in the Custom Network
+```bash
+docker run -it --name my_container --network my_custom_network centos /bin/bash
+```
+
+### Additional Examples with Different Network Drivers
+
+#### Creating an Overlay Network
+Overlay networks are typically used in Docker Swarm mode.
+```bash
+docker network create -d overlay my_overlay_network
+```
+
+#### Creating a Host Network
+Using the host network mode provides the container with direct access to the host’s network interfaces.
+```bash
+docker run -it --name my_container --network host centos /bin/bash
+```
+
+### Checking Network Connections
+
+You can verify which network a container is connected to using the `docker network inspect` command.
+
+#### Inspecting the Network
+```bash
+docker network inspect my_custom_network
+```
+
+This command provides detailed information about the network, including the containers connected to it.
+
+### Running `ping` in the Container
+
+After the container is running with the specific network, you can install `ping` and use it as needed.
+
+#### Accessing the Container’s Shell
+```bash
+docker exec -it my_container /bin/bash
+```
+
+#### Installing `ping` (if necessary)
+```bash
+yum update -y
+yum install -y iputils
+```
+
+#### Running the `ping` Command
+```bash
+ping 8.8.8.8
+```
+
+### Summary
+
+By following these steps, you can create and run a Docker container with a specific network. This setup is useful for network isolation, segmentation, and custom network configurations within your Docker environment.
