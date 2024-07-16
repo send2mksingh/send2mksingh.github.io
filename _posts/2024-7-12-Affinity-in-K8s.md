@@ -4,10 +4,7 @@
 ---
 
 
-
-There are three types of affinity/anti-affinity rules:
-
-Certainly! Affinity in Kubernetes is like setting preferences or rules for where your pods (containers) should run within a cluster. There are different types of affinities you can use to guide the scheduler in making these decisions:
+With the help of affinity we can define where to schedule pods for running on the bases of certain criteria and conditions. There are different types of affinities you can use to guide the scheduler in making these decisions:
 
 ### 1. Node Affinity
 
