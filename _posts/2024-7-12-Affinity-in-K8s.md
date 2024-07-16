@@ -36,7 +36,8 @@ spec:
 
 ### 2. Pod Affinity
 
-**Pod Affinity** helps you specify rules about placing pods close to other pods. This is useful when pods need to be co-located for reasons like low latency.
+**Pod Affinity** we can add rules about placing pods close to other pods. This is useful when pods need to be co-located for reasons like low latency.
+
 
 **Simple Example:**
 
@@ -93,7 +94,6 @@ spec:
 ```
 
 ### In Summary
-
 - **Node Affinity**: Determines on which nodes a pod can run based on node labels.
 - **Pod Affinity**: Ensures pods are scheduled on the same or specific nodes with other specified pods.
 - **Pod Anti-Affinity**: Ensures pods are not scheduled on the same nodes as other specified pods.
