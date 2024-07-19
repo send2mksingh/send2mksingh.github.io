@@ -1,6 +1,6 @@
 ---
  layout: post
- title: DaemonSets in OpenStack
+ title: DaemonSets in Kubernetes
 ---
 
 
