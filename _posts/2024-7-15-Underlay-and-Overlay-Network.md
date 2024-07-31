@@ -1,9 +1,14 @@
 ---
  layout: post
- title: Under and Overlay Networking
+ title: Underlay and Overlay Networking
 ---
 
- Sure! Let's break down underlay and overlay networking in simple terms:
+ 
+**Overlay Network** an overlay network is the virtual or logical network that is built or created on top of Underlay network.
+
+**Underlay Network** is the actual physical connectivity of network devices like:- routers, switches and cables with PC.
+
+
 
 ### Underlay Networking
 
