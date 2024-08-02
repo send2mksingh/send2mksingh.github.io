@@ -1,0 +1,142 @@
+---
+ layout: post
+ title: For Loops with Examples
+---
+
+
+
+### Basic `for` Loop
+
+This example prints numbers 1 to 5:
+
+```sh
+#!/bin/bash
+
+for i in {1..5}
+do
+  echo "Number: $i"
+done
+```
+
+### Loop Through a List
+
+This example iterates over a list of words:
+
+```sh
+#!/bin/bash
+
+for word in apple banana cherry
+do
+  echo "Fruit: $word"
+done
+```
+
+### Loop Through Files in a Directory
+
+This example processes each file in the current directory:
+
+```sh
+#!/bin/bash
+
+for file in *
+do
+  echo "File: $file"
+done
+```
+
+### Loop Through Command Output
+
+This example lists all the users on the system:
+
+```sh
+#!/bin/bash
+
+for user in $(cut -d: -f1 /etc/passwd)
+do
+  echo "User: $user"
+done
+```
+
+### Loop with C-Style Syntax
+
+This example uses C-style syntax to print numbers 1 to 5:
+
+```sh
+#!/bin/bash
+
+for ((i = 1; i <= 5; i++))
+do
+  echo "Number: $i"
+done
+```
+
+### Nested `for` Loop
+
+This example prints a multiplication table:
+
+```sh
+#!/bin/bash
+
+for ((i = 1; i <= 5; i++))
+do
+  for ((j = 1; j <= 5; j++))
+  do
+    echo -n "$((i * j)) "
+  done
+  echo
+done
+```
+
+### Practicing `for` Loop Exercises
+
+Here are a few exercises to practice:
+
+1. **Print even numbers from 1 to 20:**
+    ```sh
+    for i in {1..20}
+    do
+      if (( i % 2 == 0 ))
+      then
+        echo "Even number: $i"
+      fi
+    done
+    ```
+
+2. **Create files named file1.txt, file2.txt, ..., file5.txt:**
+    ```sh
+    for i in {1..5}
+    do
+      touch "file$i.txt"
+    done
+    ```
+
+3. **Move all `.txt` files to a backup directory:**
+    ```sh
+    mkdir -p backup
+    for file in *.txt
+    do
+      mv "$file" backup/
+    done
+    ```
+
+4. **Read a list of usernames from a file and greet each user:**
+    ```sh
+    for user in $(cat usernames.txt)
+    do
+      echo "Hello, $user!"
+    done
+    ```
+
+5. **Calculate and print the factorial of a given number:**
+    ```sh
+    number=5
+    factorial=1
+
+    for ((i = 1; i <= number; i++))
+    do
+      factorial=$((factorial * i))
+    done
+
+    echo "Factorial of $number is $factorial"
+    ```
+
