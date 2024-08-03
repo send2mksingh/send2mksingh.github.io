@@ -93,13 +93,16 @@ spec:
 -------------------------------------------------------------------------
 
 
-  command : kubectl get pods -v=7  #to see verbose, working progress of deployment.
+```
+command : kubectl get pods -v=7  #to see verbose, working progress of deployment.
 
 command : minikube ssh  # login to kubernetes cluster
 command : curl Pod_IP
 or
 command : kubectl exec -it Pod_name  -- /bin/bash
 command : curl Pod_IP
+```
+
 
 -------------------------------------------------------------------------
 
@@ -231,9 +234,10 @@ kubectl edit svc service_name   #edit service details
 
 **Load Balancing:**We can use Kubeshark to see the work flow of traffic within kubernetes cluster...
 
-```
-Simply download the Kubeshark from it's official website from Google "search on google Kubeshark Documentation "
 
+- Simply download the Kubeshark from it's official website from Google "search on google Kubeshark Documentation "
+
+```
 ===> sh <(curl -Ls https://kubeshark.co/install)  #to install the package
 ===> kubeshark tap   #to capture traffic
 
