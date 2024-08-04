@@ -1,6 +1,6 @@
 ---
  layout: post
- title: Kubeshark: The API Traffic Analyzer for Kubernetes
+ title: Kubeshark The API Traffic Analyzer for Kubernetes
 ---
 
 
@@ -61,7 +61,19 @@ Once you have installed Kubeshark, you need to deploy it to your Kubernetes clus
    kubectl apply -f https://raw.githubusercontent.com/kubeshark/kubeshark/main/deployment/kubeshark-deployment.yaml
    ```
 
-### Step 3: Start Monitoring Traffic
+### Step 3: Start Monitoring TrafficKubernetes is a complex and powerful container orchestration platform with many important concepts and features. Here are some key topics you should understand when working with Kubernetes:
+
+### 1. **Architecture and Components**
+
+- **Master Components**: API Server, Scheduler, Controller Manager, etcd
+- **Node Components**: Kubelet, Kube-Proxy, Container Runtime (e.g., Docker, containerd)
+
+### 2. **Pods**
+
+- **Pod Lifecycle**
+- **Multi-container Pods**
+- **Init Containers**
+
 
 1. **Expose the Kubeshark service**:
    To access the Kubeshark dashboard, expose the service using a Kubernetes port-forward:
