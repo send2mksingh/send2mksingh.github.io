@@ -1,3 +1,9 @@
+---
+ layout: post
+ title: Configmap And Secrets
+---
+
+
 **What is Cofigmap and Secrets:**What happens in general scenario suppose you are an app developer and let's say there is an backend application and this backend application is talking to the database and it retrives data from database and give back to users, now what are information that is application required from database like: what is the database port, database username and database password. And how this information is retrived using the Env variable and you know the hard core and thumb rule, application should not have these info as hardcoded and what happens if these details are hard coded, and details changed in future in that case user will not get desired result or output, like username or password changed.
 
 So, first we will not hard code these information into application and general practice is to save this as part of Env variable or save in a specific file and retrive this info using OS Modules.
