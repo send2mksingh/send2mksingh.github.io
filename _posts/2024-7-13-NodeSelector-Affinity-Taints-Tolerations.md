@@ -4,8 +4,11 @@
 ---
 
 **Topics to cover -Node Selector, Node affinity, Taints and Tolerations**
-**Ref - https://www.youtube.com/watch?v=O61HDmGUBJM
+
+**Ref - https://www.youtube.com/watch?v=O61HDmGUBJM**
+
 **Ref - https://github.com/iam-veeramalla/kubernetes-troubleshooting-zero-to-hero** 
+
 **Ref - https://github.com/iam-veeramalla/kubernetes-troubleshooting-zero-to-hero/blob/main/03-pods-not-schedulable/01-kind-cluster.yaml**
 
 **Pods Scheduling** to work on this concept we need multi node cluster for this we can use kind or k3d.
