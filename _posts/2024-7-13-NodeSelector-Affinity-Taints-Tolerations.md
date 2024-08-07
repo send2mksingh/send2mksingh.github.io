@@ -344,9 +344,11 @@ spec:
         - key: "key1"
           operator: "Equal"
           value: "value1" 
-          effect: "NoSchedule"  
+          effect: "NoSchedule" 
+
 ```
 
+** Run below commands:-
 
 ```
 kubectl apply -f deploy.yml
