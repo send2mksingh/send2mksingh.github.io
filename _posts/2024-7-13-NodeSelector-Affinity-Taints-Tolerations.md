@@ -5,11 +5,11 @@
 
 **Topics to cover -Node Selector, Node affinity, Taints and Tolerations**
 
-**Ref - https://www.youtube.com/watch?v=O61HDmGUBJM**
+- **Ref - https://www.youtube.com/watch?v=O61HDmGUBJM**
 
-**Ref - https://github.com/iam-veeramalla/kubernetes-troubleshooting-zero-to-hero** 
+- **Ref - https://github.com/iam-veeramalla/kubernetes-troubleshooting-zero-to-hero** 
 
-**Ref - https://github.com/iam-veeramalla/kubernetes-troubleshooting-zero-to-hero/blob/main/03-pods-not-schedulable/01-kind-cluster.yaml**
+- **Ref - https://github.com/iam-veeramalla/kubernetes-troubleshooting-zero-to-hero/blob/main/03-pods-not-schedulable/01-kind-cluster.yaml**
 
 **Pods Scheduling** to work on this concept we need multi node cluster for this we can use kind or k3d.
 **kind** kubernetes inside docker - that is if you are using things like kind your entire kubernetes cluster runs within a docker container and advantage because your kubernetes cluster running inside container they are very light weight so you can create multiple kubernetes cluster and also with large no. of nodes.
