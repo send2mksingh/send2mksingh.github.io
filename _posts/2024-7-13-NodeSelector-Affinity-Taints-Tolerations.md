@@ -316,6 +316,7 @@ kubectl taint nodes kind-worker3 key1=value1:NoSchedule
 
 **How to apply tolerations on pods**
 
+
 ```
 manoj@Ubuntu:~/kubernetes_practice$ cat deploy.yml 
 apiVersion: apps/v1
@@ -346,9 +347,8 @@ spec:
           effect: "NoSchedule"  
 
 
-
-
 ```
+
 
 ```
 kubectl apply -f deploy.yml
