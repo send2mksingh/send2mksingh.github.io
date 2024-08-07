@@ -295,7 +295,8 @@ status:
 **Conditions1**
 ****
 
--if we taint two nodes from three above nodes then pods will be auto schedule on last available node only.
+- if we taint two nodes from three above nodes then pods will be auto schedule on last available node only.
+
 ```
 kubectl taint nodes kind-worker2 key1=value1:NoSchedule
 kubectl apply -f deploy.yml
@@ -312,7 +313,7 @@ kubectl apply -f deploy.yml
 
 ```
 kubectl taint nodes kind-worker3 key1=value1:NoSchedule
-``  
+```
 
 **How to apply tolerations on pods**
 
