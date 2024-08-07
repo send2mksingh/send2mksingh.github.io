@@ -268,7 +268,6 @@ node/kind-worker tainted
 
 
 ```
-
 **Important Points** usually we don't schedule pods on control-plane or master node and if we run below command
 ```
 kubectl edit nodes control-plane 
@@ -309,7 +308,8 @@ kubectl apply -f deploy.yml
 **How to set Tolerations** When we were tainting the node we used key and value pair, No Schedule is an effect on the node but if you add the tolerations to pod which are matching these key value pair with taint.
 
 
--- We are simply taiting our last pending node
+- We are simply taiting our last pending node
+
 ```
 kubectl taint nodes kind-worker3 key1=value1:NoSchedule
 ``  
@@ -345,8 +345,6 @@ spec:
           operator: "Equal"
           value: "value1" 
           effect: "NoSchedule"  
-
-
 ```
 
 
