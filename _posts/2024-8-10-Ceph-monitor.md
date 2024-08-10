@@ -1,32 +1,23 @@
-The Ceph Monitor is one of the daemons essential to the functioning of a Ceph cluster. Monitors know the location of all the data in the Ceph cluster. Monitors maintain maps of the cluster state, and those maps make it possible for Ceph daemons to work together. These maps include the monitor map, the OSD map, the MDS map, and the CRUSH map. Three monitors are required to reach quorum. Quorum is a state that is necessary for a Ceph cluster to work properly. Quorum means that a majority of the monitors are in the “up” state.
+The Ceph Monitor is one of the daemons important to function of a Ceph cluster. Monitors know the location of all the data in the Ceph cluster. Monitor is maintaining maps of the cluster state, and those maps make it possible for Ceph daemons to work together. These maps include the monitor map, the OSD map, the MDS map, and the CRUSH map. Three monitors are required to reach quorum. Quorum is a state that is necessary for a Ceph cluster to work properly. Quorum means that a majority of the monitors are in the “up” state.
 
 
 
-### Ceph Monitors: The Backbone of Ceph Cluster Management
 
----
 
-#### Slide 1: Title Slide
-- **Title:** Understanding Ceph Monitors
-- **Subtitle:** The Backbone of Ceph Cluster Management
-- **Your Name**
-- **Date**
 
----
-
-#### Slide 2: What is a Ceph Monitor?
+#### What is a Ceph Monitor?
 - **Definition:**
   - A Ceph Monitor (MON) is a critical component in a Ceph cluster that maintains maps of the cluster state, including information about monitor nodes, object storage daemons (OSDs), and metadata servers.
 - **Role:**
-  - Ensures the overall health and stability of the Ceph cluster by managing cluster membership and state.
+  - Make sure the overall health and stability of the Ceph cluster by managing cluster membership and state.
 
 ---
 
-#### Slide 3: Key Responsibilities of Ceph Monitors
+#### Key Responsibilities of Ceph Monitors
 - **Cluster Membership:**
-  - Keeps track of which nodes are part of the cluster.
+  - Keeping track of the nodes that are part of the cluster.
 - **Cluster Maps:**
-  - Maintains several important maps, including the monitor map, OSD map, and CRUSH map.
+  - Maintains mappings, including the monitor map, OSD map, MDS map and CRUSH map.
 - **Quorum:**
   - Ensures that a majority of monitors (quorum) agree on the cluster state to avoid split-brain scenarios.
 - **Authentication:**
@@ -34,7 +25,7 @@ The Ceph Monitor is one of the daemons essential to the functioning of a Ceph cl
 
 ---
 
-#### Slide 4: How Ceph Monitors Work
+#### How Ceph Monitors Work
 - **Cluster Maps:**
   - **Monitor Map:** Contains information about all monitor nodes.
   - **OSD Map:** Tracks the state and location of all OSDs.
@@ -45,7 +36,7 @@ The Ceph Monitor is one of the daemons essential to the functioning of a Ceph cl
 
 ---
 
-#### Slide 5: Real-World Example: Ceph Monitor in Action
+#### Real-World Example: Ceph Monitor in Action
 - **Example Scenario:**
   - A new storage node is added to the Ceph cluster.
   1. **Node Addition:** The new node is brought online and configured.
@@ -68,7 +59,7 @@ The Ceph Monitor is one of the daemons essential to the functioning of a Ceph cl
 
 ---
 
-#### Slide 7: Setting Up Ceph Monitors
+#### Setting Up Ceph Monitors
 - **Installation:**
   ```sh
   sudo apt install ceph-mon
@@ -86,7 +77,7 @@ The Ceph Monitor is one of the daemons essential to the functioning of a Ceph cl
 
 ---
 
-#### Slide 8: Monitoring and Troubleshooting
+#### Monitoring and Troubleshooting
 - **Monitoring Tools:**
   - Ceph dashboard for graphical interface.
   - CLI tools for detailed monitoring and management.
@@ -102,27 +93,17 @@ The Ceph Monitor is one of the daemons essential to the functioning of a Ceph cl
 
 ---
 
-#### Slide 9: Conclusion
+#### Conclusion
 - **Summary:**
   - Ceph Monitors are crucial for maintaining the health, stability, and security of a Ceph cluster.
 - **Next Steps:**
   - Explore more advanced configurations and monitor setups.
   - Engage with the Ceph community for support and further learning.
 
----
 
-#### Slide 10: Q&A
-- **Questions and Answers:**
-  - Open the floor for any questions from the audience.
-
----
-
-#### Slide 11: References
+#### References
 - **Resources:**
   - [Ceph Documentation](https://docs.ceph.com/docs/master/)
   - [Ceph Community](https://ceph.io/community/)
   - [Ceph Monitor Setup Guide](https://docs.ceph.com/docs/master/rados/operations/monitoring/)
 
----
-
-This presentation covers the essential aspects of Ceph Monitors, including their definition, key responsibilities, how they work, real-world examples, benefits, setup, monitoring, and troubleshooting.
