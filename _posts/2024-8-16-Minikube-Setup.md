@@ -1,11 +1,11 @@
-###Reference: https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+**###Reference:** https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 
 **Prerequisite :**
-Run as Normal user
-Install docker or any Container Runtime for Support
+- Run as Normal user
+- Install docker or any Container Runtime for Support
 
 
-###Run below commands:
+**###Run below commands:**
 
 Update the apt package index and install packages needed to use the Kubernetes apt repository:
 
@@ -51,6 +51,7 @@ sudo dpkg -i minikube_latest_amd64.deb
 
 ```
 
+```
 minikube start
-
+```
 
